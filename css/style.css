@@ -101,5 +101,5 @@ ul {
   height: 580px;
   background:
   linear-gradient(to top, rgba(250, 243, 117, 0.2), rgba(250, 243, 117, 0.2)),
-  url(https://github.com/tim-gavrilov/operenie/blob/main/images/img-background.png?raw=true) 0 14%/cover no-repeat;
+  url('https://raw.githubusercontent.com/tim-gavrilov/operenie/main/images/img-background.png') 0 14%/cover no-repeat;
 }
