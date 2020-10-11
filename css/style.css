@@ -101,5 +101,5 @@ ul {
   height: 580px;
   background:
   linear-gradient(to top, rgba(250, 243, 117, 0.2), rgba(250, 243, 117, 0.2)),
-  url('/Users/Tim/Desktop/operenie/images/img-background.png') 0 14%/cover no-repeat;
+  url('images/img-background.png') 0 14%/cover no-repeat;
 }
