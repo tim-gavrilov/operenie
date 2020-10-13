@@ -40,11 +40,11 @@ a {
   margin: 0 auto;
 }
 
-@media (max-width:980px) {
+@media (max-width:979px) {
   max-width: 750px;
 }
 
-@media (max-width:765px) {
+@media (max-width:767px) {
   max-width: none;
 }
 
@@ -54,18 +54,20 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
   background-color: rgba(151, 157, 215, 0.6);
+  z-index: 50;
 }
 
 .main-header-nav-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  z-index: 4;
 }
 
 .logo img {
@@ -94,6 +96,90 @@ ul {
   text-transform: uppercase;
   color: #fff;
   font-size: 13px;
+}
+/* Меню бургер */
+.header-burger-menu {
+  display: none;
+}
+
+@media (max-width:767px) {
+  body.lock {
+    overflow: hidden;
+  }
+  header {
+    position: fixed;
+  }
+  .header-burger-menu {
+   display: block;
+   position: relative;
+   width: 30px;
+   height: 20px;
+   z-index: 3;
+}
+
+.header-burger-menu span {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  left: -10px;
+  top: 9px;
+}
+
+.header-burger-menu::before,
+.header-burger-menu::after {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: -10px;
+}
+
+.header-burger-menu::before {
+  top: 0;
+}
+
+.header-burger-menu::after {
+  bottom: 0;
+}
+
+.header-burger-menu.active::before {
+  transform:rotate(45deg);
+  top: 9px;
+}
+
+.header-burger-menu.active::after {
+  transform:rotate(-45deg);
+  bottom: 9px;
+}
+
+.header-burger-menu.active span {
+  transform:scale(0);
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transition: all 0.3s ease 0s;
+  background-color: rgb(151, 157, 215)
+}
+
+.site-navigation.active {
+  top: 0;
+}
+
+.site-navigation li {
+  margin: 5px;
+}
+
 }
 
 /*main*/
