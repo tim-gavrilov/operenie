@@ -23,6 +23,7 @@ ul {
 }
 
 a {
+  margin-right: 20px;
   text-decoration: none;
 }
 
@@ -40,17 +41,10 @@ a {
   margin: 0 auto;
 }
 
-@media (max-width:979px) {
-  max-width: 750px;
-}
-
-@media (max-width:767px) {
-  max-width: none;
-}
-
 /*Header*/
 header {
   width: 100%;
+  height: 80px;
   position: absolute;
   top: 0;
   left: 0;
@@ -62,6 +56,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto 0;
 }
 
 .logo {
@@ -71,6 +66,8 @@ header {
 }
 
 .logo img {
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
 }
 
@@ -96,11 +93,60 @@ ul {
   text-transform: uppercase;
   color: #fff;
   font-size: 13px;
+  transition: color 0.2s linear;
 }
+
+.site-navigation-item a:hover {
+  color: #FAF375;
+}
+
 /* Меню бургер */
 .header-burger-menu {
   display: none;
 }
+
+/* main */
+.promo {
+  height: 580px;
+  background:
+  linear-gradient(to top, rgba(250, 243, 117, 0.2), rgba(250, 243, 117, 0.2)),
+  url('https://raw.githubusercontent.com/tim-gavrilov/operenie/main/images/img-background.png') 50% 14%/cover no-repeat;
+}
+
+/* promo */
+.promo-wrapper {
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo-image {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 110px 10px 0 10px;
+}
+
+.promo-image img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+  object-fit: contain;
+}
+
+.promo-wrapper p {
+  max-width: 650px;
+  margin: 5px 20px 20px 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.promo-wrapper span {
+  background-color: #FAF375;
+}
+
 
 @media (max-width:767px) {
   body.lock {
@@ -115,6 +161,10 @@ ul {
    width: 30px;
    height: 20px;
    z-index: 3;
+}
+
+.site-navigation-item a {
+  font-size: 20px;
 }
 
 .header-burger-menu span {
@@ -180,12 +230,61 @@ ul {
   margin: 5px;
 }
 
+} /* конец медиа запроса */
+
+@media (max-width:425px) {
+
+  header,
+  .main-header-nav-wrapper {
+    height: 70px;
+  }
+
+  .logo p {
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .logo img {
+    max-width: 80px;
+  }
+
+  /* promo */
+  .promo-image {
+    height: 300px;
+    margin: 80px 10px 0 10px;
+  }
+
+  .promo,
+  .promo-wrapper {
+    height: 480px;
+  }
+
+  .promo-wrapper p {
+    font-size: 18px;
+  }
 }
 
-/*main*/
-.promo {
-  height: 580px;
-  background:
-  linear-gradient(to top, rgba(250, 243, 117, 0.2), rgba(250, 243, 117, 0.2)),
-  url('https://raw.githubusercontent.com/tim-gavrilov/operenie/main/images/img-background.png') 0 14%/cover no-repeat;
+@media (max-width:375px) {
+
+  /* promo */
+  .promo-image {
+    height: 270px;
+  }
+}
+
+@media (max-width:320px) {
+
+  /* promo */
+  .promo,
+  .promo-wrapper {
+    height: 400px;
+  }
+
+  .promo-image {
+    height: 220px;
+  }
+
+  .promo-wrapper p {
+    font-size: 15px;
+  }
 }
