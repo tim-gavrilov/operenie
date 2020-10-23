@@ -4,3 +4,16 @@ $(document).ready(function(){
     $('body').toggleClass('lock');
   });
 });
+
+$(document).ready(function(){
+  $('.slider-list').slick({
+    slidesToShow: 3,
+    speed: 1500,
+    // autoplay: true,
+    autoplaySpeed: 1500,
+    pauseOnHover: true,
+    waitForAnimate: true,
+    centerMode: true,
+    variableWidth: true,
+  });
+});
