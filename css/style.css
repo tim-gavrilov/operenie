@@ -262,7 +262,6 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 40px;
-  /* border: 1px solid black; */
 }
 
 .disciplines-item li {
@@ -272,7 +271,6 @@ header {
   font-weight: 700;
   font-size: 16px;
   position: relative;
-  /* border: 1px solid black; */
 }
 
 .disciplines-item li:before {
@@ -301,6 +299,145 @@ header {
 .disciplines .bottom:hover {
   background-color: #4E5AC3;
   color: #FDF733;
+}
+
+/* founders */
+.founders {
+  background-color: #DADADA;
+  padding-bottom: 20px;
+}
+
+.founders h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 0px 20px 0 20px;
+  padding: 40px 0 0 0;
+  position: relative;
+}
+
+.founders h2::before {
+  content: "";
+  width: 60px;
+  height: 8px;
+  background-color: #979DD7;
+  position: absolute;
+  top: 30px;
+  left: 4px;
+}
+
+.founders p {
+  font-size: 20px;
+  margin: 15px 20px 0 20px;
+}
+
+/* gallery */
+
+.gallery .gallery-wrapper {
+  display: grid;
+  grid-template-areas:
+  "gallery-item-1 gallery-item-2 gallery-item-3 gallery-item-4";
+}
+
+.gallery .gallery-wrapper div {
+  margin-bottom: -5px;
+  z-index: 20;
+}
+
+.gallery .gallery-wrapper img {
+  max-width: 100%;
+  transition: 0.5s;
+}
+
+.gallery .gallery-wrapper img:hover {
+  filter: brightness(0.5);
+}
+
+/* facts */
+
+.facts h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 0px 20px 0 20px;
+  padding: 40px 0 0 0;
+  position: relative;
+}
+
+.facts h2::before {
+  content: "";
+  width: 60px;
+  height: 8px;
+  background-color: #979DD7;
+  position: absolute;
+  top: 30px;
+  left: 4px;
+}
+
+.facts-blok-1,
+.facts-blok-2 {
+  margin-top: 20px;
+}
+
+.facts-blok-1 li {
+  margin: 25px 0;
+}
+
+.facts-blok-1 li p,
+.facts-blok-2 li p {
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.facts .facts-blok-1,
+.facts .facts-blok-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.facts .facts-foto-1,
+.facts .facts-foto-2 {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.facts .ok {
+  float: left;
+  margin-right: 5px;
+  max-width: 100%;
+}
+
+.facts-blok-2 ul {
+list-style: inside;
+margin-left: 20px;
+}
+
+.facts-blok-2 p {
+  font-size: 20px;
+}
+
+.facts-blok-2 li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.facts .bottom {
+ display: block;
+ width: 170px;
+ height: 35px;
+ background-color: #FDF733;
+ margin: 20px auto;
+ padding: 8px 0;
+ text-align: center;
+ font-size: 15px;
+ font-weight: 700;
+ color: black;
+}
+
+.facts .bottom:hover {
+ background-color: #4E5AC3;
+ color: #FDF733;
 }
 
 @media (max-width:767px) {
@@ -405,6 +542,36 @@ header {
   font-size: 17px;
 }
 
+/* founders */
+
+.founders h2 {
+  font-size: 45px;
+}
+
+.founders p {
+  font-size: 17px;
+}
+
+/* gallery */
+
+.gallery .gallery-wrapper {
+  grid-template-areas:
+  "gallery-item-1 gallery-item-2"
+  "gallery-item-3 gallery-item-4";
+}
+
+/* facts */
+.facts .facts-blok-1,
+.facts .facts-blok-2 {
+  flex-direction: column;
+}
+
+.facts .facts-blok-1 ul,
+.facts .facts-blok-2 p,
+.facts .facts-blok-2 ul {
+  margin: 0 25px;
+}
+
 } /* конец медиа запроса */
 
 @media (max-width:425px) {
@@ -479,6 +646,35 @@ header {
     height: 5px;
     left: 1px;
 }
+
+/* founders */
+  .founders h2 {
+    font-size: 35px;
+  }
+
+  .founders p {
+    font-size: 15px;
+  }
+
+  .founders h2::before {
+    width: 50px;
+    height: 5px;
+    left: 1px;
+}
+
+/* facts */
+  .facts h2 {
+    font-size: 35px;
+  }
+
+  .facts p {
+    font-size: 15px;
+  }
+
+  .facts h2::before {
+    width: 50px;
+    height: 5px;
+    left: 1px;
 }
 
 @media (max-width:375px) {
@@ -510,6 +706,14 @@ header {
     .disciplines h2 {
       font-size: 25px;
     }
+
+    /* founders */
+
+    .founders h2 {
+      font-size: 25px;
+    }
+
+  }
 
 @media (max-width:320px) {
 
