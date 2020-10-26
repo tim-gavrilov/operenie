@@ -440,6 +440,219 @@ margin-left: 20px;
  color: #FDF733;
 }
 
+/* evidence */
+.evidence {
+  height: 480px;
+  background:
+  linear-gradient(to top, rgba(114, 127, 242, 0.6), rgba(114, 127, 242, 0.6)),
+  url('https://raw.githubusercontent.com/tim-gavrilov/operenie/main/images/evidence.jpg') 50% 30%/cover no-repeat;
+}
+
+.evidence h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 0px 20px 0 20px;
+  padding: 100px 0 0 0;
+  position: relative;
+  color: #FAF375;
+}
+
+.evidence h2::before {
+  content: "";
+  width: 60px;
+  height: 8px;
+  background-color: #fff;
+  position: absolute;
+  top: 85px;
+  left: 4px;
+}
+
+.evidence .evidence-list {
+  display: grid;
+  grid-template-areas:
+  "evidence-item-grid-1 evidence-item-grid-2 evidence-item-grid-3 evidence-item-grid-4";
+  margin: 40px 0;
+}
+
+.evidence .evidence-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.evidence .evidence-list dt {
+  margin-bottom: 10px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.evidence .evidence-list dd {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.evidence .evidence-list span {
+  letter-spacing: 4px;
+  background-color: #FAF375;
+}
+
+/* events */
+.events h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 40px 20px 0 20px;
+  position: relative;
+}
+
+.events h2::before {
+  content: "";
+  width: 60px;
+  height: 8px;
+  background-color: #979DD7;
+  position: absolute;
+  top: -10px;
+  left: 4px;
+}
+
+.events .mowgli {
+  margin: 20px 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  background:
+  linear-gradient(to top, rgba(114, 127, 242, 0.5), rgba(114, 127, 242, 0.5)),
+  url('https://raw.githubusercontent.com/tim-gavrilov/operenie/main/images/mowgli-background.jpg') 50% 30%/cover no-repeat;
+}
+
+.events .mowgli:hover {
+    box-shadow: 0 0 10px;
+}
+
+.events .mowgli .mowgli-wrapper {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+.events .mowgli p {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.events .mowgli .charitable-project {
+  display: none;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.events .mowgli .charitable-project::after {
+  position: absolute;
+  content: "";
+  width: 180px;
+  height: 2px;
+  background-color: #fff;
+  bottom: -4px;
+  left: 0;
+}
+
+.events .bottom {
+ display: none;
+ width: 170px;
+ height: 35px;
+ background-color: #FDF733;
+ margin: 0 auto;
+ padding: 8px 0;
+ text-align: center;
+ font-size: 15px;
+ font-weight: 700;
+ text-transform: uppercase;
+ color: black;
+}
+
+.events .bottom:hover {
+ background-color: #4E5AC3;
+ color: #FDF733;
+}
+
+/* contacts */
+.contacts h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 60px 20px 0 20px;
+  position: relative;
+}
+
+.contacts h2::before {
+  content: "";
+  width: 60px;
+  height: 8px;
+  background-color: #979DD7;
+  position: absolute;
+  top: -10px;
+  left: 4px;
+}
+
+.contacts dl {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.contacts .address {
+  text-decoration: none;
+}
+
+.contacts dt {
+  font-weight: 700;
+}
+
+.contacts dd {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+/* main-footer */
+
+.main-footer {
+  height: 80px;
+  background-color: #2F2E2E;
+}
+
+.main-footer .main-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer a {
+  color: #fff;
+}
+
+.main-footer img {
+  float: right;
+}
+
 @media (max-width:767px) {
   body.lock {
     overflow: hidden;
@@ -572,6 +785,36 @@ margin-left: 20px;
   margin: 0 25px;
 }
 
+/* evidence */
+.evidence h2 {
+  font-size: 40px;
+  padding: 45px 0 0 0;
+}
+
+.evidence h2::before {
+  top: 30px;
+}
+
+.evidence .evidence-list {
+  grid-template-areas:
+  "evidence-item-grid-1 evidence-item-grid-2"
+  "evidence-item-grid-3 evidence-item-grid-4";
+}
+
+/* events */
+.events h2 {
+  font-size: 45px;
+}
+
+/* contacts */
+.contacts h2 {
+  font-size: 45px;
+}
+
+.contacts dl {
+  font-size: 19px;
+}
+
 } /* конец медиа запроса */
 
 @media (max-width:425px) {
@@ -677,6 +920,56 @@ margin-left: 20px;
     left: 1px;
 }
 
+/* evidence */
+.evidence h2 {
+  font-size: 30px;
+  /* padding: 45px 0 0 0; */
+}
+
+.evidence h2::before {
+  top: 30px;
+}
+
+.evidence .evidence-list {
+  margin: 10px 0;
+}
+
+.evidence .evidence-list dt {
+  margin-bottom: 10px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.evidence .evidence-list dd {
+  font-size: 13px;
+  margin: 0 5px;
+}
+
+/* events */
+.events .mowgli {
+  margin: 20px auto;
+}
+
+.contacts dl {
+  font-size: 18px;
+}
+
+.contacts li {
+  margin-bottom: 5px;
+}
+
+/* .main-footer */
+.main-footer {
+  height: 120px;
+  font-size: 15px;
+}
+
+.main-footer .main-footer-wrapper {
+  flex-direction: column;
+  align-items: center;
+}
+}
+
 @media (max-width:375px) {
 
   /* promo */
@@ -713,6 +1006,47 @@ margin-left: 20px;
       font-size: 25px;
     }
 
+    /* evidence */
+
+    .evidence h2 {
+      font-size: 25px;
+      /* padding: 45px 0 0 0; */
+    }
+
+    .evidence h2::before {
+      top: 30px;
+    }
+
+    .evidence .evidence-list {
+      grid-template-areas:
+      "evidence-item-grid-1"
+      "evidence-item-grid-2" "evidence-item-grid-3"
+      "evidence-item-grid-4";
+    }
+
+    .evidence .evidence-list {
+      margin: 10px 0;
+    }
+
+    .evidence .evidence-list dt {
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+
+    .evidence .evidence-list dd {
+      font-size: 12px;
+      margin: 0 5px;
+    }
+
+    /* events */
+    .events h2 {
+      font-size: 30px;
+    }
+
+    /* contacts */
+    .contacts h2 {
+      font-size: 30px;
+    }
   }
 
 @media (max-width:320px) {
@@ -742,4 +1076,8 @@ margin-left: 20px;
     margin: -20px 0 0 0;
   }
 
+ /* evidence */
+  .evidence {
+    height: 500px;
+  }
 }
