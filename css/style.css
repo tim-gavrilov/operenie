@@ -1080,4 +1080,10 @@ margin-left: 20px;
   .evidence {
     height: 500px;
   }
+
+/* .main-footer */
+  .main-footer {
+    height: 120px;
+    font-size: 14px;
+  }
 }
