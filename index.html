@@ -8,6 +8,7 @@
     <title>Студия творческого развития детей и подростков - Поколение оперение</title>
   </head>
   <body>
+    <div id="popup-header" class="popup-header"></div>
     <header class="main-header">
       <nav class="main-header-nav">
         <div class="container">
@@ -20,19 +21,19 @@
           <span></span>
         </div>
         <ul class="site-navigation">
-          <li class="site-navigation-item">
+          <li class="site-navigation-item site-navigation-item-1">
             <a href="#">О нас</a>
           </li>
-          <li class="site-navigation-item">
+          <li class="site-navigation-item site-navigation-item-2">
             <a href="#">Дисциплины</a>
           </li>
           <li class="site-navigation-item">
             <a href="#">Педагоги</a>
           </li>
-          <li class="site-navigation-item">
+          <li class="site-navigation-item site-navigation-item-3">
             <a href="#">Оперение это</a>
           </li>
-          <li class="site-navigation-item">
+          <li class="site-navigation-item site-navigation-item-4">
             <a href="#">Контакты</a>
           </li>
         </ul>
@@ -90,7 +91,7 @@
             <li>Танец</li>
             <li>Вокал</li>
           </ul>
-          <a class="bottom" href="#">Узнать цену</a>
+          <a class="bottom" href="#popup">Узнать цену</a>
         </div>
       </section>
       <section class="founders">
@@ -136,7 +137,7 @@
         </div>
           <img class="facts-foto-2" src="images/acquaintance-foto-2.jpeg" width="400px">
         </div>
-        <a class="bottom" href="#">Узнать цену</a>
+        <a class="bottom" href="#popup">Узнать цену</a>
       </div>
       </section>
       <section class="evidence">
@@ -201,23 +202,46 @@
       <div class="container">
         <div class="main-footer-wrapper">
           <div class="footer-left">
-      <p class="copyright">2020 "Поколение Оперение"</p>
-      <a href="#">Политика конфиденциальности</a>
+            <p class="copyright">2020 "Поколение Оперение"</p>
+            <a href="#">Политика конфиденциальности</a>
           </div>
           <div class="footer-right">
-      <p>Следите за нашими новостями в инстаграм</p>
-      <a class="footer_logo">
-        <img src="images/inst-logo.png" width="30px" height="30px">
-      </a>
-    </div>
-    </div>
-    </div>
+            <p>Следите за нашими новостями в инстаграм</p>
+            <a class="footer_logo">
+              <img src="images/inst-logo.png" width="30px" height="30px">
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- Скрипты -->
     <div>
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
       <script src="js/slick.min.js"></script>
       <script src="js/script.js"></script>
+    </div>
+    <div id="popup" class="popup">
+      <a href="#popup-header" class="popup-area"></a>
+      <div class="popup-body">
+        <div class="popup-wrapper">
+          <a href="#popup-header" class="popup-close">Х</a>
+          <div class="form">
+            <form action="#" id="form" class="form-body">
+              <h1 class="form-title">Заполните форму</h1>
+              <div class="form-item">
+                <label for="name" class="label-name">Имя</label>
+                <input id="name" type="text" name="name" class="input-name">
+              </div>
+              <div class="form-item">
+                <label for="tel" class="label-tel">Телефон</label>
+                <input id="tel" type="tel" name="tel" class="input-tel">
+              </div>
+              <button type="submit" class="form-bottom">Отправить</button>
+            </form>
+          </div>
+          <div class="popup-text"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
